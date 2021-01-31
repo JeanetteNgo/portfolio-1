@@ -8,9 +8,7 @@ body {
     padding-top: 100px;
 }
 
-
-
-ul#navBar {
+/* ul#navBar {
     background-color:linen;
     list-style-type: none;
     margin: 0;
@@ -23,7 +21,7 @@ ul#navBar {
     float: right;
     }
     
- #contactNavLink {
+ #resumeNavLink {
     margin-right: 20px;
 }
   
@@ -40,15 +38,253 @@ ul#navBar {
     }
 
 a.navLink:hover {
-    color: rgba(0, 0, 0, 0.8);
-    border-bottom: rebeccapurple 3px solid;
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom: rgb(95, 81, 109) 3px solid;
     transition: 0.2s;
+}
+
+/*portfolio navbar test 2*/
+/* nav {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 5%;
+    height: 80px;
+    background-color: aliceblue;
+}
+nav .logo {
+    float: left;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: rgb(111, 80, 141);
+} */
+/* nav ul {
+    float: right;
+} */
+/* .navItem {
+    float: left;
+    list-style: none;
+    padding: 0px 5px 0px 5px;
+}
+
+a.navLink{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.55);
+}
+#nav-toggle {
+    position: absolute;
+}
+nav .burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+nav .burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(96, 60, 110);
+    margin: 5px;
+    border-radius: 3px;
+}
+@media screen and (max-width: 768px) {
+    .logo {
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+    .navLink {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .burger {
+        display: block;
+    }
+}  */
+/* portfolio navbar test 1*/
+/* nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    font-family: 'Poppins', sans-serif;
+    background-color:aliceblue;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    padding: 0px, 5%;
+}
+.logo {
+    color: rgb(138, 115, 155);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 25%;
+}
+nav ul li a{
+    /* margin: 30px; */
+    /* font-family: 'Roboto', sans-serif;
+} */
+/* .burger {
+    display: none;
+    cursor: pointer;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: indigo;
+    margin: 5px;
+}
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    nav ul {
+        width: 50%;
+        position: absolute;
+        right: 0px;
+        height: 100%;
+        width: 50%;
+        top: 45px;
+        background-color: rgb(138, 115, 155);
+        color: rgba(0, 0, 0, 0.55);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    nav ul li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+}
+.navActive {
+    transform: translateX(0%);
+} */ */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+}
+.header {
+    height: 60px;
+    background: aliceblue;
+    padding: 10px;
+    color:rgb(0,0,0,0.5);
+}
+.logo {
+    float: left;
+    text-transform: uppercase;
+    color: indigo;
+    margin: 15px;
+}
+.menu{
+    float: right;
+ 
+}
+.menu a {
+    color: rgb(0,0,0,0.5);
+    text-decoration: none;
+    padding: 15px;
+}
+.show-menu-btn, .hide-menu-btn {
+    transition: 0.4s;
+    font-size: 26px;
+    cursor: pointer;
+    display: none;
+}
+.show-menu-btn {
+    float: right;
+}
+.show-menu-btn i {
+    /* line-height: 100px; */
+    padding: 20px;
+}
+.menu a:hover {
+    font-weight: 600;
+    border-bottom: rgb(117, 117, 117) 4px solid;
+    opacity: 70%;
+}
+
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+    color: rgb(0,0,0,0.8);
+} 
+
+#checkBox {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+/* @media after all content styling on page */
+@media screen and (max-width:768px) {
+    .show-menu-btn,.hide-menu-btn {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: aliceblue;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        justify-content: center;
+        padding: 100px 0;
+        line-height: normal;
+        transition: 0.4s;
+    }
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+    .hide-menu-btn {
+        position: absolute;
+        top: 28px;
+        right: 28px;
+    }
+    #checkBox:checked ~ .menu {
+        right: 0;
+    }
+}
+
+h1 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .aboutJeanette {
     text-align: center;
-    background-color:seashell;
+    font-family: 'Montserrat', sans-serif;
+    background-color:rgb(167, 136, 255);
     padding: 20px;
+    align-items: center;
+    justify-content: center;
 }
 #myPicture {
 	max-width: 50%;
@@ -56,24 +292,14 @@ a.navLink:hover {
   	height: auto;
   	border-radius: 50%;
   	margin: auto;
-  	padding: 10px;
+      padding: 10px;
+      align-items: center;
 }
 
-.educationContainer {
-    display: grid;
-    margin: 30px 100px 30px 100px;
-    padding: 2% 5% 2% 5%;
-    grid-template-columns: repeat(3, minmax(400px,1fr));
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1.2fr 1.2fr;
-    background-color:honeydew;
-    grid-template-areas: 
-    "educationMain educationMain educationMain"
-    "major specialization minor"
-    "major specialization language";
-    grid-gap: 5px;
-    font-family: Arial, Helvetica, sans-serif;
- }
+#educationMainText {
+    padding: 10px 40px 10px 16%;
+    font-size: 14px;
+}
 .educationHeader {
     text-align: center;
     color: rebeccapurple;
@@ -83,60 +309,31 @@ a.navLink:hover {
 }
 .educationSubHeader {
     text-align: center;
-    color: slateblue;
-    font-size: 15px;
+    color: rgb(118, 110, 165);
+    font-size: 14px;
     font-weight: 550;
     text-transform: uppercase;
 }
-#educationMainText {
-    grid-area: educationMain;
-    padding: 15px;
-    font-size: 14px;
-    
+.modules {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin: 20px 14% 20px 14%;
 }
-#majorColumn {
-    background: snow;
-    grid-area: major;
-    border-right: solid 3px grey;
-    padding: 20px 50px 20px 55px;
-    text-align:left;
-    font-size: 13.5px;
+.moduleColumn {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 5% 15% 5% 15%;
+    background-color: aliceblue;
 }
-#specializationColumn {
-   background:aliceblue;
-   grid-area: specialization;
-   border-right: solid 3px grey;
-   padding: 20px 50px 20px 55px;
-   text-align:left;
-   font-size: 13.5px;
-}
-#minorColumn {
-    background: lightyellow;
-    grid-area: minor;
-    grid-row: 2/3;
-    padding: 20px 50px 20px 55px;
-    text-align:left;
-    font-size: 13.5px;
-}
-#languageColumn {
-    background:azure;
-    grid-area: language;
-    grid-row: 3/4;
-    padding: 20px 50px 20px 55px;
-    text-align:left;
-    font-size: 13.5px;
+.moduleList {
+    justify-items: center;
+    align-items: center;
+    font-size: 13px;
+    padding: 2% 10% 2% 10%;
+    font-weight: 500;
 }
 
-@media only screen and (max-width: 400px) {
-    .education {
-       grid-template-columns: 1fr;
-       grid-template-rows: repeat(auto-fit, minmax(300px, 1fr);
-       grid-template-areas: 
-       "educationMain"
-       "major"
-       "specialization"
-       "minor"
-       "language";
-    }
-}
 
