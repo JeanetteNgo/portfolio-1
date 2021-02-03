@@ -352,3 +352,77 @@ h1 {
 }
 
 
+
+/* ART SECTION */
+
+.imageGallery {
+    margin: 3% 10% 5% 10%;
+
+
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    
+}
+div.gallery {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 5px;
+
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+
+  padding: 0 4px;
+}
+
+div.gallery:hover {
+  border: 3px solid rgb(148, 144, 177);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  margin-top: 8px;
+  vertical-align: middle;
+\\
+}
+
+div.desc {
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+
+}
+
+@media only screen and (max-width: 768px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
