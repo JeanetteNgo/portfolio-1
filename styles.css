@@ -182,23 +182,23 @@ nav ul li a{
 }
 .navActive {
     transform: translateX(0%);
-} */ */
+} */
 
 *{
     margin: 0;
     padding: 0;
-    font-family: "montserrat", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .header {
     height: 60px;
-    background: aliceblue;
-    padding: 10px;
-    color:rgb(0,0,0,0.5);
+    background: rgb(39, 0, 75);
+    padding: 8px 30px 8px 50px;
+    color: azure;
 }
 .logo {
     float: left;
     text-transform: uppercase;
-    color: indigo;
+    color:rgb(255, 208, 251);
     margin: 15px;
 }
 .menu{
@@ -206,9 +206,16 @@ nav ul li a{
  
 }
 .menu a {
-    color: rgb(0,0,0,0.5);
+    color: rgb(217, 226, 255);
     text-decoration: none;
-    padding: 15px;
+
+    font-weight: 600;
+    padding: 8px;
+    margin: 10px;
+
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
 }
 .show-menu-btn, .hide-menu-btn {
     transition: 0.4s;
@@ -225,14 +232,14 @@ nav ul li a{
 }
 .menu a:hover {
     font-weight: 600;
-    border-bottom: rgb(117, 117, 117) 4px solid;
-    opacity: 70%;
+    border-bottom: rgb(205, 217, 255) 3.5px solid;
+    font-size: 18px;
 }
 
 .menu a:hover,
 .show-menu-btn:hover,
 .hide-menu-btn:hover {
-    color: rgb(0,0,0,0.8);
+    color: rgb(255, 208, 251);
 } 
 
 #checkBox {
@@ -250,7 +257,7 @@ nav ul li a{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: aliceblue;
+        background: rgb(39, 0, 75);
         right: -100%;
         top: 0;
         text-align: center;
@@ -275,16 +282,18 @@ nav ul li a{
 
 h1 {
     font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .aboutJeanette {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    background-color:rgb(167, 136, 255);
-    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color:rgb(232, 243, 255);
+    padding: 180px;
     align-items: center;
     justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1611361513918-eee28c9d96a4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8YWVzdGhldGljJTIwYmFja2dyb3VuZHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
 }
 #myPicture {
 	max-width: 50%;
@@ -292,26 +301,31 @@ h1 {
   	height: auto;
   	border-radius: 50%;
   	margin: auto;
-      padding: 10px;
-      align-items: center;
+    padding: 10px;
+    align-items: center;
 }
 
+#educationSection {
+    margin: 50px;
+}
 #educationMainText {
-    padding: 10px 40px 10px 16%;
+    padding: 50px 40px 20px 16%;
     font-size: 14px;
 }
 .educationHeader {
     text-align: center;
     color: rebeccapurple;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
+    margin: 10px;
     text-transform: uppercase;
 }
 .educationSubHeader {
     text-align: center;
     color: rgb(118, 110, 165);
     font-size: 14px;
-    font-weight: 550;
+    font-weight: 600;
+    margin: 5px 0px 15px 0px;
     text-transform: uppercase;
 }
 .modules {
@@ -333,6 +347,7 @@ h1 {
     align-items: center;
     font-size: 13px;
     padding: 2% 10% 2% 10%;
+    margin: 0px 0px 10px 15px;
     font-weight: 500;
 }
 
