@@ -3,18 +3,24 @@
 <html>
 
 <head>
-  <title>Jeanette's website</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="shortcut icon" href="images/myFavicon.ico" type="image/x-icon">
-  <script src="https://kit.fontawesome.com/4bab21cbed.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/4bab21cbed.js" crossorigin="anonymous"></script>
+  
+  <link rel="shortcut icon" href="images/myFavicon.svg" type="image/x-icon">
+    
+  <title>Jeanette's Portfolio</title>
 </head>
 
-<body>
+<body id="homeBody">
   <div class="header">
-    <h2 class="logo"> JEANETTE </h2>
+    <h2 class="logo"> Jeanette </h2>
     <input type="checkbox" id="checkBox">
     <label for="checkBox" class="show-menu-btn">
       <i class="fas fa-bars"></i>
@@ -25,20 +31,84 @@
       <a href="about.html"> About </a>
       <a href="portfolio.html"> Portfolio </a>
       <a href="art.html"> Art </a>
-      <a href="resources/resume.pdf" target="_blank"> Resume </a>
+      <a href="files/resume.pdf" target="_blank"> Resume </a>
       <label for="checkBox" class="hide-menu-btn">
         <i class="fas fa-times"></i>
       </label>
     </ul>
   </div>
+
+
   
-  <div style="text-align: center;">
-    <img id="display_pic" src="images/cry.jpg" alt="Jeanette" width="400" height="300">
-    <h1>Hi, I am Jeanette &#128540;</h1>
-    <p>I am an NUS undergraduate.</p>
+  
+  <div class="landing">
+  <!-- Landing Text -->
+    <div class="landingText">
+      <p> HI &#128540; </p>
+      <br>
+      <p> I AM JEANETTE </p>
+      <br>
+      <p> ASPIRING DESIGNER </p>
+      <br>
+      <button type="button" class="homepageBtn">
+        <a href="#featureWork"> View my Works</a>
+      </button>
+    </div>
+
+    <!-- Landing Image -->
+
+      <img id="displayPic" src="images/cry.jpg" alt="Jeanette">
+
+  </div>  
+  
+  <section id="featureWork">
+    <!-- Feature Portfolio -->
+    <h2 id="featureText"> 
+      Featured Works </h2>
+
+    <!-- Box -->
+    <div class="featureContainer">
+      <!-- Box 1 -->
+        <div id="feature1"> 
+          
+        </div>
+
+      <!-- Box 2 -->
+        <div id="feature2"> 
+            
+        </div>
+
+      <!-- Box 3 -->
+        <div id="feature3"> 
+            
+        </div>
+    </div>
+  </section>
+
+  <!-- What's Next -->
+  <div class="callToAction">
+    
+    <h2 id="whatNext"> 
+      What's Next? </h2>
+  
+    <br>
+    <button type="button" class="homepageBtn"> 
+      <a href = "mailto: jeanettengo@u.nus.edu.com"> Connect with Me </a> 
+    </button>
+    <br> 
+    <button type="button" class="homepageBtn"> Download Portfolio </button>
+    <br>
+
+    <form action="resources/resume.pdf" target="_blank">
+      <input type="submit" class="homepageBtn" value="Download Resume" />
+    </form>
+
   </div>
 
   <!-- <script src="main.js/main.js"></script> -->
 </body>
+
+  
+
 
 </html>
