@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/4bab21cbed.js" crossorigin="anonymous"></script>
   
@@ -20,16 +21,14 @@
 
 <body id="home-body">
 
-    <header class="header fixed-top">
-
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-fade">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Jeanette.</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
@@ -53,8 +52,7 @@
             </ul>
           </div>
         </div>
-      </nav>
-    </header>
+    </nav>
 
     <main class="container container-fluid text-center">
       <div>
@@ -68,36 +66,59 @@
     </main>
     
     <div class="container container-fluid" id="feature-work"> 
-      <h2> Featured Work </h2>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top img-responsive" src="featured/shopee/images/PrototypeOverview.JPG" alt="Shopee UI Redesign Project">
-        <div class="card-body">
-          <h3 class="card-title"> Shopee UI Case Study </h3>
-          <p class="card-text"> Conceptualized as part of a submission for the Shopee Product & Design Challenge 2021. </p>
-          <a href="featured/shopee/shopeeIndex.html" target="_blank" class="btn btn-primary"> View full project </a>
+      <div class="row h-25">
+        <div class="col">
+          <h2> Featured Work </h2> <hr>
         </div>
       </div>
+      <div class="row h-75">
+        <div class="col">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top img-responsive" src="featured/shopee/images/PrototypeOverview.JPG" alt="Shopee UI Redesign Project">
+            <div class="card-body">
+              <h3 class="card-title" id="shopee-card-title"> Shopee UI Case Study </h3>
+              <p class="card-text"> Conceptualized as part of a submission for the Shopee Product & Design Challenge 2021. </p>
+              <a href="featured/shopee/shopeeIndex.html" target="_blank" class="btn btn-primary"> View full project </a>
+            </div>
+          </div>
+        </div>
 
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top img-responsive" src="featured/shopee/images/PrototypeOverview.JPG" alt="Shopee UI Redesign Project">
-        <div class="card-body">
-          <h3 class="card-title"> Corpus Animatum </h3>
-          <p class="card-text"> A top-down shooter game set against the backdrop of a zombie apocalypse.</p>
-          <a href="featured/shopee/shopeeIndex.html" target="_blank" class="btn btn-primary"> View full project </a>
+        <div class="col">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top img-responsive" src="featured/shopee/images/PrototypeOverview.JPG" alt="Shopee UI Redesign Project">
+            <div class="card-body">
+              <h3 class="card-title" id="corpus-card-title"> Corpus Animatum </h3>
+              <p class="card-text"> A top-down shooter game set against the backdrop of a zombie apocalypse.</p>
+              <a href="featured/shopee/shopeeIndex.html" target="_blank" class="btn btn-primary"> View full project </a>
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
 
-    <footer class="container container-fluid mx-auto">
-      <h2> What's Next? </h2>
-      <br>
-      <button type="button" class="btn btn-secondary">
-        <a href = "mailto: jeanettengo@u.nus.edu.com"> Connect with Me </a> 
-      </button>
-      <button type="button" class="btn btn-secondary">
-        <a href = "files/resume.pdf" target="_blank"> Download Resume </a> 
-      </button>
+    <footer class="container container-fluid">
+
+      <div class="row">
+        <div class="col">
+          <h2> What's Next? </h2> <hr>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-primary">
+              <a href = "mailto: jeanettengo@u.nus.edu.com"> Connect with Me </a> 
+            </button>
+          </div>
+
+          <div class="col">
+            <button type="button" class="btn btn-primary">
+              <a href = "files/resume.pdf" target="_blank"> Download Resume </a> 
+            </button>
+          </div>
+        </div>
+      </div>
+
     </footer>
 
     
