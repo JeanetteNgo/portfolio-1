@@ -458,3 +458,15 @@ footer .btn-primary {
     color: rgb(250, 239, 87);
     text-decoration: underline;
 }
+
+
+/* Under construction */
+.under-construction {
+    width: 100%;
+    min-width: 100% !important;
+    height: 100vh !important;
+    background-color: #f8f0f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
