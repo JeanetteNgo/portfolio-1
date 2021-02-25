@@ -214,6 +214,9 @@ main p {
     transform: scale(1.1);
     transition: 500ms;
 }
+#feature-work .btn-primary {
+    background-color: #fffafd;
+}
 #feature-work a {
     font-size: 15px;
     font-weight: 600;
