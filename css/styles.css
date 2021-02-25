@@ -186,15 +186,15 @@ main p {
 #feature-work {
     background-color: #9a87b7;
     margin: 0;
-    padding-top: 30px;
-    padding-bottom: 100px;
+    /* padding-top: 30px;
+    padding-bottom: 100px; */
     display: grid;
     justify-content: center;
     align-items: center;
 
     width: 100%;
     max-width: 100% !important;
-    min-height: 100%;
+    min-height: fit-content;
     height: 100vh;
 }
 #feature-work h2 {
@@ -469,4 +469,31 @@ footer .btn-primary {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Writing */
+#writing-container {
+    width: 100%;
+    min-width: 100% !important;
+    height: 100vh !important;
+    background-color: #f8f0f5;
+    margin: 0 !important;
+    display: grid;
+    align-items: center;
+    justify-content: center; 
+
+    margin: 50px;
+    padding: 30px;
+}
+#writing-container .row {
+    margin: 20px;
+}
+#writing-container h2 {
+    font-size: 22px;
+}
+#writing-container a {
+    font-size: 18px;
+}
+#writing-container p {
+    text-align: center;
 }

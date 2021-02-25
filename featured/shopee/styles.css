@@ -100,7 +100,7 @@ nav {
     font-size: 40px;
     font-weight: bold;
     letter-spacing: 2px;
-    color: sienna !important;
+    color: #7a6696 !important;
     opacity: 90%;
     padding-left: 80px;
 }
@@ -115,7 +115,7 @@ nav {
 } */
 
 .nav-link {
-    color:  #985E4C !important;
+    color:  #7a6696 !important;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
@@ -125,8 +125,8 @@ nav {
     margin-right: 15px;
 }
 .nav-link:hover {
-    color: #fff !important;
-    background-color: #CEABB1;
+    color: #f8f0f5!important;
+    background-color: #9a87b7;
     border-radius: 30px;
     opacity: 90%;
     font-size: 18px;
@@ -135,7 +135,7 @@ nav {
 }
 
 .nav-link .active {
-    background-color: sienna;
+    background-color: #7a6696;
     color: rgb(255, 243, 226);
     border-radius: 2rem;
     fill-opacity: 50%;
@@ -150,7 +150,7 @@ nav {
     align-items: center;
 }
 .navbar-toggler {
-    color: sienna !important;
+    color: #7a6696 !important;
     opacity: 90%;
     border-radius: 20px;
 }
