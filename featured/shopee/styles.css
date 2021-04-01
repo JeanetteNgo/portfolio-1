@@ -69,16 +69,16 @@ li {
     text-align: left;
 }
 .btn-primary {
-    background-color: #f8edeb;
-    border: 2px solid #a1848c;
+    background-color: #fff5ec;
+    border: 2px solid salmon;
     border-radius: 20px;
     margin: 15px;
     padding: 2px 8px 2px 8px;
     width: max-content;
 }
 .btn-primary:hover {
-    background-color: #f8edeb;
-    border: 3px solid #a1848c;
+    background-color: #fff5ec;
+    border: 3px solid salmon;
     transform: scale(1.05);
     transition: 500ms;
 }
