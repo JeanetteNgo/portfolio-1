@@ -5,24 +5,24 @@ body {
     padding: 0 !important;
     padding-top: 80px !important;
     background-repeat: no-repeat;
-    color: sienna;
+    color: tomato;
     background-color: #fff5ec;
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 35px;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     text-align: center;
-    color: #A15959;
+    color: tomato
 }
 h2 {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 600;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     text-align: center;
-    color: #A15959;
+    color: tomato;
 }
 h3 {
     font-size: 22px;
@@ -30,12 +30,12 @@ h3 {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     text-transform: uppercase;
-    color: #A15959;
+    color: tomato;
 }
 h4 {
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
-    color: #A15959;
+    color: tomato;
 }
 p {
     font-family: 'Montserrat', sans-serif;
@@ -106,15 +106,6 @@ nav {
     padding-left: 80px;
 }
 
-/* .navbar-nav {
-    padding: 5px;
-    background-color: #ebe7dc;
-    height: 100vh;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-} */
-
 .nav-link {
     color:  #7a6696 !important;
     text-decoration: none;
@@ -159,10 +150,67 @@ nav {
 
 /* Body Code */
 
-.content {
-    margin: 3% 10% 3% 10%;
-    padding: 10px;
+/* Side Nav */
+.side-nav {
+    grid-row-end: span 2;
+    text-align: center;  
+    color:lavender;
+
+    height: 50vh;
+  }  
+ol.side-nav-list {
+    padding-left: 30px;
 }
+li.side-nav-items {
+    margin: 5px;
+} 
+
+/* Main Content */
+.container {
+    font-family: 'Roboto', sans-serif;
+    height:95%;
+    width:98%;
+} 
+.container > * {
+    background-color: #fff5ec;
+    /* background-image: url("https://i.redd.it/yn9ryipxeac31.png"); */
+    background-size: cover;
+    padding: 1em;
+    border-radius: 20px;
+
+    margin-bottom: 5%;
+}
+
+.header {
+    background-color: tomato;
+    color: white;
+    grid-row-end: span 35;
+    /* background-image: url("images/PrototypeOverview.JPG") */
+    background-color: #fff5ec;
+}
+#content {
+    min-height: 40%;
+    overflow-y: scroll;
+    background-color: white;
+    border: 2px solid salmon;
+    border-radius: 10px;
+    height: 85vh;
+}
+.content::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+  }
+  
+.content::-webkit-scrollbar-track {
+    background: white;        /* color of the tracking area */
+    opacity: 20%;
+  }
+  
+.content::-webkit-scrollbar-thumb {
+    background-color: salmon;    /* color of the scroll thumb */
+    border-radius: 80px;       /* roundness of the scroll thumb */
+    border: 3px solid salmon;  /* creates padding around scroll thumb */
+  }
+
 
 .content h2 {
     font-family: 'Montserrat', sans-serif;
@@ -183,6 +231,7 @@ nav {
     margin: 1% 16% 1% 16%;
     padding: 10px;
     line-height: 25px;
+    text-align: left;
 }
 
 .content img {
@@ -248,4 +297,39 @@ nav {
     right: 0;
     width: 100%;
     height: 100%;
+  }
+
+
+  /* responsive grid layout */
+
+@media screen and (min-width: 40em) {
+    .container > * {
+      margin-bottom: 0;
+    }
+    /* Define the grid */
+    .container {
+      display: grid;
+      grid-template-columns: 18% 60% 18%;
+      grid-gap: 2% 2%;
+      grid-template-rows: 10% auto 10%;
+    }
+    /* Place items on the grid */
+    .header {
+      grid-column: 1 / span 3;      
+      display:flex; 
+      justify-content:center;
+      align-items:center;
+    }
+
+    .side-nav {
+        height: 30vh;
+    }
+
+    .content {
+      grid-column: 2 / span 2;
+      text-align: center;
+      color:lavender;
+      height: 80vh;
+    }
+  
   }
