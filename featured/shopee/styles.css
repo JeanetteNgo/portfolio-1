@@ -235,7 +235,7 @@ li.side-nav-items {
 }
 
 .content img {
-    max-width: 800px;
+    max-width: 700px;
     margin: 20px;
 
     display: block;
@@ -298,7 +298,21 @@ li.side-nav-items {
     right: 0;
     width: 100%;
     height: 100%;
-  }
+}
+.img-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+} 
+.img-column {
+    /* flex: 30%; */
+    padding: 5px;
+}
+.img-column img {
+    margin: 10px;
+    max-width: 250px;
+}
 
 
   /* responsive grid layout */
