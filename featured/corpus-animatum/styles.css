@@ -204,7 +204,7 @@ li.side-nav-items {
     background-color: white;
     border: 2px solid rgb(56, 71, 119);
     border-radius: 10px;
-    height: 78vh;
+    height: 75vh;
 }
 .content::-webkit-scrollbar {
     width: 10px;               /* width of the entire scrollbar */
